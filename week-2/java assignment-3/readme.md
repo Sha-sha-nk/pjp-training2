@@ -222,12 +222,12 @@ C:\Users\STARK\Desktop\dev\incomeevaluator\incomeevaluator>mvn spring-boot:run
 ```sh
 http://127.0.0.1:8080/loadLocationIncomeDataCSV
 ```
-![alt text](https://github.com/Sha-sha-nk/pjp-training2/tree/master/week-2/java%20assignment-3/screenshot_demo/input.PNG)
+![](screenshot_demo/input.PNG)
 ## API 2 for generating country/city average income report
 ```sh
 http://127.0.0.1:8080/generateReportCSV
 ```
-![alt text](https://github.com/Sha-sha-nk/pjp-training2/tree/master/week-2/java%20assignment-3/screenshot_demo/output.PNG)
+![](screenshot_demo/output.PNG)
 
 
 
