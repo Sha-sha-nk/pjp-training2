@@ -1,4 +1,4 @@
-# IncomeEvaluator (Week 2 Assignment 2)
+# Transaction Fee Calculator (Week 2 Assignment 2)
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
