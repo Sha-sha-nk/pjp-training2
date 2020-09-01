@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Success</title>
+<style type="text/css">
+    span {
+        display: inline-block;
+        width: 200px;
+        text-align: left;
+    }
+</style>
+</head>
+<body>
+<div align="center">
+    <h2 th:text="#{output_header}"></h2>
+    <span th:text="#{menu}"></span><span th:text="#{${FormEvent.menu}}"></span><br/>
+    <span th:text="#{result}"></span><span th:text="${FormEvent.answer}"></span><br/>
+</div>
+</body>
+</html>

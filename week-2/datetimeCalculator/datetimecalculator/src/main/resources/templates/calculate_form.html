@@ -1,0 +1,46 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<style type="text/css">
+    label {
+        display: inline-block;
+        width: 200px;
+        margin: 5px;
+        text-align: left;
+    }
+    input[type=text], input[type=password], select {
+        display: inline-block;
+        width: 200px;
+    }
+    input[type=radio] {
+        margin-left: 45px;
+    }
+    input[type=checkbox] {
+        margin-right: 190px;
+    }  
+    button {
+        padding: 5px;
+        margin: 10px;
+    }
+</style>
+</head>
+<body>
+<div align="center">
+    <h1 th:text="#{title}"></h1>
+    <form action="#" th:action="@{/calculate}" method="post" th:object="${FormEvent}">
+        <label th:text="#{d1}"></label>
+        <input type="datetime" th:field="*{date1}"/><br/>
+        <label th:text="#{d2}"></label>
+        <input type="datetime" th:field="*{date2}"/><br/>
+        <label th:text="#{menu}">Menu:</label>
+        <select th:field="*{menu}">
+            <option th:each="p : ${menuOptions}" th:value="${p}" th:text="#{${p}}" />
+        </select>
+        <br/>
+        <button type="submit" th:text="#{button_text}"></button>
+    </form>
+    <form action="#" th:action="@{/recent100logs}" method="get">
+        <button type="submit" th:text="#{recent_log}"></button>
+    </form>
+</div>
+</body>
+</html>   

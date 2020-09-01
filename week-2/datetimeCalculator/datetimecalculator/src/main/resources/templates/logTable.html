@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<style>
+#table007 {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  table-layout: auto;
+  width: 100%;
+}
+
+#table007 td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#table007 tr:nth-child(even){background-color: #f2f2f2;}
+
+#table007 tr:hover {background-color: #ddd;}
+
+#table007 th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+</head>
+<body>
+<div align="center">
+    <h2 th:text="#{log_table_header}"></h2>
+    <table border="1" style="width:300px" id="table007">
+    <tr>
+        <th th:text="#{first_date}"></th>
+        <th th:text="#{second_date}"></th>
+        <th th:text="#{menu}"></th>
+        <th th:text="#{result}"></th>
+    </tr>
+    <tr th:each="p : ${session_table}"></td>
+        <td th:text="${p.date1}"></td>
+        <td th:text="${p.date2}"></td>
+        <td th:text="#{${p.menu}}"></td>
+        <td th:text="${p.answer}"></td>
+    </tr>
+    </table>
+</div>
+</body>
+</html>
