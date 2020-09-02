@@ -11,6 +11,11 @@ languages support:
 ## Class diagram
 ![](datetimecalculator/class_diagram.png)
 
+## Sequence diagram
+![](screenshot_demo/showForm.PNG)
+![](screenshot_demo/submitForm.PNG)
+![](screenshot_demo/recentLog.PNG)
+
 # UI
 ## API for English
 ```sh
