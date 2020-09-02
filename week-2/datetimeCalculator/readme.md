@@ -6,6 +6,11 @@ languages support:
   - English
   - French
   - Spanish
+  
+# Diagrams
+## Class diagram
+![](datetimecalculator/class_diagram.png)
+
 # UI
 ## API for English
 ```sh
